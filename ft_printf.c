@@ -6,7 +6,7 @@
 /*   By: ncano-co <ncano-co@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 17:41:55 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/10/13 18:26:06 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/10/13 18:59:50 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@ int ft_printf(char const *, ...)
 {
 	
 
-	// Devuelve el número de caracteres impresos (incluyedo letras espacios, números y saltos de linea). Si ocurrre un error devuelve un valor negativo (-1).
 
+	// Devuelve el número de caracteres impresos (incluyedo letras espacios, números y saltos de linea). Si ocurrre un error devuelve un valor negativo (-1).
 }
