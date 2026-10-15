@@ -6,7 +6,7 @@
 /*   By: ncano-co <ncano-co@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 16:31:23 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/10/15 18:17:14 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/10/15 18:34:03 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	print_string(char *str)
 }
 
 // Esta va a ser el de %%
-int	print_percentaje(char c)
+int	print_percentage(char c)
 {
 	if (c == NULL)
 		return (0);
