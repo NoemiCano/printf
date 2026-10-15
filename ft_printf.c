@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ncano-co <ncano-co@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: ncano-co <ncano-co@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 17:41:55 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/10/14 18:10:59 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/10/15 16:31:29 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 int	ft_printf(char const *, ...)
 {
 
+	// gestionar un null como primer argumento
 	// Es posible que el char const * sea el número de argumentos que nos pasan???
 	// Sino el último argumento que nos pasen debe ser NULL y así hacemos un while de que mientras va_arg no sea null o algo así
 	// El va_arg lo suelen meter en un bucle
