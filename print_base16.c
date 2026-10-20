@@ -6,14 +6,14 @@
 /*   By: ncano-co <ncano-co@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 10:43:48 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/10/20 16:22:16 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/10/20 16:43:42 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
 // Esta va a ser el de %x
-int	print_hex_lower(unsigned int nbr)
+int	print_hex_lower(unsigned long nbr)
 {
 	int		count;
 	char	*hex_digits;
@@ -52,7 +52,7 @@ int	print_hex_lower(unsigned int nbr)
 }
 
 // Esta va a ser el de %X
-int	print_hex_upper(unsigned int nbr)
+int	print_hex_upper(unsigned long nbr)
 {
 	int		count;
 	char	*hex_digits;
