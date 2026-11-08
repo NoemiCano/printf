@@ -6,12 +6,13 @@
 /*   By: ncano-co <ncano-co@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 16:27:00 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/11/08 17:50:28 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/11/08 18:19:01 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
+// Function for %p
 int	print_pointer(void *ptr)
 {
 	unsigned long	address;

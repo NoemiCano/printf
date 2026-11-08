@@ -6,13 +6,13 @@
 /*   By: ncano-co <ncano-co@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 18:22:29 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/11/08 17:50:09 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/11/08 18:19:25 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-// Esta va a ser el de %i y %d
+// Function for %i y %d
 int	print_integer(int nbr)
 {
 	int	count;
@@ -34,7 +34,7 @@ int	print_integer(int nbr)
 	return (count);
 }
 
-// Esta va a ser el de %u
+// Function for %u
 int	print_int_unsigned(unsigned int nbr)
 {
 	int	count;

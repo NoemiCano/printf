@@ -6,20 +6,20 @@
 /*   By: ncano-co <ncano-co@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 16:31:23 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/11/08 18:11:40 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/11/08 18:18:51 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-// Esta va a ser el de %c
+// Function for %c
 int	print_char(char c)
 {
 	ft_putchar_fd(c, 1);
 	return (1);
 }
 
-// Esta va a ser la de %s
+// Function for %s
 int	print_string(char *str)
 {
 	int	count;
@@ -36,7 +36,7 @@ int	print_string(char *str)
 	return (count);
 }
 
-// Esta va a ser el de %%
+// Function for %%
 int	print_percentage(char c)
 {
 	if (c == '\0')

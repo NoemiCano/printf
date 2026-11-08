@@ -6,13 +6,13 @@
 /*   By: ncano-co <ncano-co@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 10:43:48 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/11/08 17:50:13 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/11/08 18:19:13 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-// Esta va a ser el de %x
+// Function for %x
 int	print_hex_lower(unsigned long nbr)
 {
 	int		count;
@@ -26,7 +26,7 @@ int	print_hex_lower(unsigned long nbr)
 	return (count);
 }
 
-// Esta va a ser el de %X
+// Function for %X
 int	print_hex_upper(unsigned long nbr)
 {
 	int		count;
