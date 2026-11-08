@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   print_char.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ncano-co <ncano-co@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ncano-co <ncano-co@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 16:31:23 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/10/15 18:34:03 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/11/08 12:34:05 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // Esta va a ser el de %c
 int	print_char(char c)
 {
-	if (c == NULL)
+	if (c == '\0')
 		return (0);
 	ft_putchar_fd(c, 1);
 	return (1);
@@ -28,7 +28,10 @@ int	print_string(char *str)
 
 	count = 0;
 	if (!str)
-		return (0);
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
 	ft_putstr_fd(str, 1);
 	while (str[count])
 		count++;
@@ -38,8 +41,8 @@ int	print_string(char *str)
 // Esta va a ser el de %%
 int	print_percentage(char c)
 {
-	if (c == NULL)
+	if (c == '\0')
 		return (0);
-	ft_putchar_fd("%", 1);
+	ft_putchar_fd('%', 1);
 	return (1);
 }

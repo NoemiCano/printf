@@ -6,7 +6,7 @@
 /*   By: ncano-co <ncano-co@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 10:43:48 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/10/27 07:51:20 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/11/08 12:28:54 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,37 +17,12 @@ int	print_hex_lower(unsigned long nbr)
 {
 	int		count;
 	char	*hex_digits;
-	int		prin;
 
 	count = 0;
-	prin = 0;
 	hex_digits = "0123456789abcdef";
-
-	if (nbr == 0)
-	{
-		write (1, "0", 1);
-		return (1);
-	}
-	while (nbr >= 0)
-	{
-		count++;
-		if (nbr >= 16)
-		{
-			prin = nbr % 16;
-			print_hex_lower(nbr / 16);
-			write (1, &hex_digits[prin], 1);
-		}
-		if (nbr < 16 && nbr != 0)
-		{
-			prin = nbr % 16;
-			write (1, &hex_digits[prin], 1);
-			nbr /= 16;
-		}
-		else
-		{
-			break;
-		}
-	}
+	if (nbr >= 16)
+		count += print_hex_lower(nbr / 16);
+	count += write(1, &hex_digits[nbr % 16], 1);
 	return (count);
 }
 
@@ -56,37 +31,12 @@ int	print_hex_upper(unsigned long nbr)
 {
 	int		count;
 	char	*hex_digits;
-	int		prin;
 
 	count = 0;
-	prin = 0;
 	hex_digits = "0123456789ABCDEF";
-
-	if (nbr == 0)
-	{
-		write (1, "0", 1);
-		return (1);
-	}
-	while (nbr >= 0)
-	{
-		count++;
-		if (nbr >= 16)
-		{
-			prin = nbr % 16;
-			print_hex_upper(nbr / 16);
-			write (1, &hex_digits[prin], 1);
-		}
-		if (nbr < 16 && nbr != 0)
-		{
-			prin = nbr % 16;
-			write (1, &hex_digits[prin], 1);
-			nbr /= 16;
-		}
-		else
-		{
-			break;
-		}
-	}
+	if (nbr >= 16)
+		count += print_hex_upper(nbr / 16);
+	count += write(1, &hex_digits[nbr % 16], 1);
 	return (count);
 }
 

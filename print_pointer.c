@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   print_pointer.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ncano-co <ncano-co@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ncano-co <ncano-co@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 16:27:00 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/10/20 17:13:54 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/11/08 12:36:02 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,18 @@ int	print_pointer(void *ptr)
 	int				count;
 
 	if (ptr == NULL)
-		return (0);
+	{
+		write(1, "(nil)", 5);
+		return (5);
+	}
 	address = (unsigned long)ptr;
 	print_char('0');
 	print_char('x');
-	count = 2 +print_hex_lower(address);
+	count = 2 + print_hex_lower(address);
 	return (count);
 }
 
 // #include "stdio.h"
-
 // int main(void) {
 //     int numero = 42;
 //     char letra = 'Z';
