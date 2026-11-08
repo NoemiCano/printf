@@ -6,7 +6,7 @@
 /*   By: ncano-co <ncano-co@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 17:41:55 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/11/08 17:49:37 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/11/08 18:14:47 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ int	ft_eva_format(char const *format, int i, va_list arg)
 	else if (format[i] == 'u')
 		count += print_int_unsigned(va_arg(arg, unsigned int));
 	else if (format[i] == 'x')
-		count += print_hex_lower(va_arg(arg, unsigned long));
+		count += print_hex_lower(va_arg(arg, unsigned int));
 	else if (format[i] == 'X')
-		count += print_hex_upper(va_arg(arg, unsigned long));
+		count += print_hex_upper(va_arg(arg, unsigned int));
 	else if (format[i] == '%')
 		count += print_percentage(format[i]);
 	return (count);

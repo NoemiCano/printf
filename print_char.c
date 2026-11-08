@@ -6,7 +6,7 @@
 /*   By: ncano-co <ncano-co@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 16:31:23 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/11/08 17:50:22 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/11/08 18:11:40 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 // Esta va a ser el de %c
 int	print_char(char c)
 {
-	if (c == '\0')
-		return (0);
 	ft_putchar_fd(c, 1);
 	return (1);
 }
