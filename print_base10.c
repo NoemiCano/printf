@@ -6,11 +6,11 @@
 /*   By: ncano-co <ncano-co@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 18:22:29 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/11/08 12:33:26 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/11/08 17:50:09 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 // Esta va a ser el de %i y %d
 int	print_integer(int nbr)

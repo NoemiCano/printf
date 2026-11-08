@@ -6,11 +6,11 @@
 /*   By: ncano-co <ncano-co@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 16:27:00 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/11/08 12:36:02 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/11/08 17:50:28 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	print_pointer(void *ptr)
 {

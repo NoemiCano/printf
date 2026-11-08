@@ -6,11 +6,11 @@
 /*   By: ncano-co <ncano-co@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 16:31:23 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/11/08 12:34:05 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/11/08 17:50:22 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 // Esta va a ser el de %c
 int	print_char(char c)

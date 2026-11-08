@@ -6,11 +6,11 @@
 /*   By: ncano-co <ncano-co@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/17 10:43:48 by ncano-co          #+#    #+#             */
-/*   Updated: 2026/11/08 12:28:54 by ncano-co         ###   ########.fr       */
+/*   Updated: 2026/11/08 17:50:13 by ncano-co         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 // Esta va a ser el de %x
 int	print_hex_lower(unsigned long nbr)
